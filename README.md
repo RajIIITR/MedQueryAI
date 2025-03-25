@@ -93,8 +93,8 @@ GitInsight/
 ├── app.py                 # Main Streamlit application
 ├── src/
 │   └── helper.py          # Helper functions for embeddings and repo processing
-    └── prompt.py
-├── store_index.py         # Script to process and store code in Pinecone
+    └── prompt.py         
+├── store_index.py         # Script to process and store code in Pinecone (First run this python file it stores data in chunks in vector database in our case PineCone.)
 ├── requirements.txt       # Dependencies
 └── .env                   # Environment variables (not tracked)
 ```
