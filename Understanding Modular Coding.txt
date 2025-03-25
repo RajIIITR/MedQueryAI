@@ -1,0 +1,34 @@
+The Data folder in our code stores the pdf folder or other data folder where it will refer the book as our 
+source to answer any question n we can say we are using it as RAG application.
+
+The research folder consist of ipynb files where we run our entire code in jupyter notebbok so that we can 
+check that our each code is working properly or not this is crucial part before we jump into modular coding.
+
+**** Now comes MODULAR CODING ****
+
+Step-1:  In modular coding we create template.py file (though its not compulsory we can create file n folder manually)
+    Its role is to create all other file & folder which we may require in modular coing like app.py, 
+    store_index.py, src folder etc, it vary to user uses.
+
+Step-2:  Now we create src folder where we create 3 files:-
+    1.  __init__.py : It is a constructor file whenever we call this project by default it run/go to the 
+        constructor i.e. in our case it is __init__.py file.
+    2.  Then we will create helper.py file where we will store all function which we will require like in 
+        our case we are using it for loading our dataset, extracting chunks from it using RecursiveTextSplitter
+        function. And we are loading/downloading our embedding model.
+    3.  Then the use of prompt.py is that user gives its prompt as we know that LLM model are trained to do
+        various task but in our case we want it to behave like chatbot or question-answering way so we give
+        prompt to it so that it can understand what we want from it and work in our required way.
+
+Step-3: We will create .env file where we will store all API key like, Google Gemini, Vector database like 
+        Pinecone api key, hugging face api key etc. So that we our code automatically detect this file n load
+        API key/token by itself via load_dotenv library.
+
+Step-4: We will create store_index.py file since we are using pinecone which is not an local vector database 
+        unlike chromadb & faiss. But this step is optional we can initialize this code in sequential with our
+        app.py file with all other codes too.
+
+Step-5: Then we will create the main thing that is app.py where we call all our files needed, loading our LLM 
+        model linking our different file with each other so that they work synchronously here we simple we can say 
+        in easy word we copy paste our entire ipynb file from experiment so that we can run entire code snippet
+        collectively.

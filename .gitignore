@@ -1,0 +1,6 @@
+Templates/*
+static/*
+medical_chatbot/*
+.env
+src/__pycache__/*
+app.py
