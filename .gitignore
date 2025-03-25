@@ -1,6 +1,4 @@
-Templates/*
-static/*
-medical_chatbot/*
+Data/*
 .env
 src/__pycache__/*
 app.py
