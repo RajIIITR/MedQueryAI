@@ -1,7 +1,7 @@
-# 🩺 Medical Knowledge Assistant
+# 🩺 MedQuery AI
 
 ## 🌟 Overview
-Medical Knowledge Assistant is an advanced AI-powered application that provides comprehensive medical insights through text queries and image analysis. Leveraging cutting-edge technologies like Retrieval-Augmented Generation (RAG), Google's Gemini AI, and Hugging Face embeddings, this tool offers intelligent medical information support.
+MedQuery AI is an advanced AI-powered application that provides comprehensive medical insights through text queries and image analysis. Leveraging cutting-edge technologies like Retrieval-Augmented Generation (RAG), Google's Gemini AI, and Hugging Face embeddings, this tool offers intelligent medical information support.
 
 ## 🚀 Features
 - **Text-Based Medical Queries**
@@ -30,7 +30,7 @@ Medical Knowledge Assistant is an advanced AI-powered application that provides 
 ### Local Setup
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/medical-knowledge-assistant.git
+git clone https://github.com/RajIIITR/medical-knowledge-assistant.git
 cd medical-knowledge-assistant
 ```
 
@@ -54,9 +54,16 @@ pip install -r requirements.txt
 - Key dependencies:
   - sentence-transformers==2.2.2
   - langchain==0.3.1
+  - pypdf==3.12.0 
+  - python-dotenv==1.0.1
   - langchain-pinecone==0.2.3
-  - torch==2.6.0
+  - langchain-community==0.3.1
+  - langchain-experimental==0.0.1
   - langchain-google-genai==2.0.11
+  - duckduckgo-search==7.5.3
+  - torch==2.6.0 
+  - torchaudio==2.6.0
+  - torchvision==0.21.0
 
 ## ▶️ Usage
 ```bash
