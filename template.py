@@ -13,7 +13,7 @@ list_of_files = [
     "setup.py",
     "app.py",
     "research/trials.ipynb",
-    ""
+    "store_index.py"
 ]
 
 
