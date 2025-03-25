@@ -43,7 +43,7 @@ def perform_medical_web_search(query: str, max_results: int = 5) -> List[Dict[st
     ]
     
     results = []
-    with DDGS() as ddgs:
+    with DDGS(timeout=20) as ddgs:
         search_query = f"site:({' OR '.join(medical_domains)}) {query}"
         for result in ddgs.text(search_query, max_results=max_results):
             try:
