@@ -1,6 +1,5 @@
 sentence-transformers
 langchain
-Flask
 pypdf
 python-dotenv
 langchain-pinecone
